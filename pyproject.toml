@@ -1,20 +1,23 @@
-[tool.poetry]
-name = "computervision-imageprocessing-techniques"
+[project]
+name = "computervision-glossary"
 version = "0.1.0"
-description = "A repository of scripts implementing useful computer vision and machine learning models, particularly in the image processing field."
-authors = ["Amanda SR Ho <amanda.hsr@u.nus.edu>"]
-license = "GPL-3.0 license"
+description = "Computer vision techniques/models and short scripts implementing them."
+authors = [
+    {name = "Anandadide",email = "amandahsr9@gmail.com"}
+]
+license = {text = "GPL-3.0"}
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-black = "^24.4.2"
-flake8 = "^7.0.0"
-isort = "^5.13.2"
-pytest = "^8.2.2"
-opencv-python = "^4.10.0.82"
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python (>=4.13.0.92,<5.0.0.0)",
+    "black (>=25.11.0,<26.0.0)",
+    "isort (>=6.1.0,<7.0.0)",
+    "flake8 (>=7.3.0,<8.0.0)",
+    "mypy (>=1.19.1,<2.0.0)",
+    "matplotlib (>=3.9.4,<4.0.0)"
+]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
