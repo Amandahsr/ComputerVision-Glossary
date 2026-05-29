@@ -8,8 +8,8 @@ A list of common and useful computational techniques and models I have come acro
 - Low-pass filters: Filters that remove high-frequency noises while allowing low-frequency signals to pass through, useful for providing smoothing and blurring effects in images.
 - High-pass filters: Filters that remove low-frequency noises while allowing high-frequency signals to pass through, useful for sharpening effects and detecting sharp edges in images.
 - Otsu Thresholding: A simple method for generating a binary mask of objects in images, useful for object detections.
-- Watershed: An opencv algorithm that involves creating basins and expanding them to segment objects in images.
 - Image denoising: Technique to reduce graininess and decolorization in images to improve image quality.
+- Feature Extraction: Methods used to convert objects of interest in an image into vector representation, useful for object recognition and object matching tasks.
 
 ## Open-source deep-learning models/libraries
 - [Deepspot](https://github.com/cbib/DeepSpot): Deep-learning method for enhancement of fluorescent spots in microscopy images.
@@ -17,6 +17,7 @@ A list of common and useful computational techniques and models I have come acro
 - [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything): An AI model from MetaAI that takes in user-specified prompts to segment objects in images.
 - [BigFISH](https://github.com/fish-quant/big-fish) spot detection in microscopy images: Detects fluorescent spots in microscopy images.
 - [trackpy](https://github.com/soft-matter/trackpy) spot detection in microscopy images: Detects fluorescent spots in microscopy images.
+- [Watershed](https://www.geeksforgeeks.org/computer-vision/image-segmentation-with-watershed-algorithm-opencv-python): An opencv algorithm that involves creating basins based on pixel intensities, and expanding them to segment objects in images.
 
 ## ML architectural performance add-ons
 - [Convolutional Block Attention Module (CBAM)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance. Shown to have negligible computational/memory overhead but provides significant performance when used.
