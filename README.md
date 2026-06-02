@@ -12,11 +12,11 @@ A list of common and useful computational techniques and models I have come acro
 - Feature Extraction: Methods used to convert objects of interest in an image into vector representation, useful for object recognition and object matching tasks.
 
 ## Open-source deep-learning models/libraries
-- [Deepspot](https://github.com/cbib/DeepSpot): Deep-learning method for enhancement of fluorescent spots in microscopy images.
-- [Cellpose](https://github.com/MouseLand/cellpose): A neural network based method trained specifically for cell segmentation in images.
-- [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything): An AI model from MetaAI that takes in user-specified prompts to segment objects in images.
-- [BigFISH](https://github.com/fish-quant/big-fish) spot detection in microscopy images: Detects fluorescent spots in microscopy images.
-- [trackpy](https://github.com/soft-matter/trackpy) spot detection in microscopy images: Detects fluorescent spots in microscopy images.
+- [Deepspot](https://github.com/cbib/DeepSpot): Deep-learning CNN model for enhancement of fluorescent spots in microscopy images.
+- [Cellpose](https://github.com/MouseLand/cellpose): A U-Net model trained specifically for cell segmentation in images. Offers segmentation on specific cell features, such as cell boundaries or nucleus segmentation.
+- [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything): A vision-transformer (ViT) model from MetaAI that takes in user-specified prompts to segment objects in images. Offers both a GUI and an API for better customization of segmentation.
+- [BigFISH](https://github.com/fish-quant/big-fish) spot detection in microscopy images: Detects fluorescent spots in microscopy images by enhancing spots using a Laplacian of Gaussian (LoG) filter, followed by pixel intensity thresholding to detect RNA spots.
+- [trackpy](https://github.com/soft-matter/trackpy) spot detection in microscopy images: Detects fluorescent spots in microscopy images by leveraging on the Crocker-Grier algorithm (detect feature then track movement).
 - [Watershed](https://www.geeksforgeeks.org/computer-vision/image-segmentation-with-watershed-algorithm-opencv-python): An opencv algorithm that involves creating basins based on pixel intensities, and expanding them to segment objects in images.
 
 ## ML architectural performance add-ons
