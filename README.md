@@ -20,6 +20,7 @@ A list of common and useful computational techniques and models I have come acro
 - [Watershed](https://www.geeksforgeeks.org/computer-vision/image-segmentation-with-watershed-algorithm-opencv-python): An opencv algorithm that involves creating basins based on pixel intensities, and expanding them to segment objects in images.
 
 ## ML architectural performance add-ons
+- [Squeeze-and-Excitation Networks (SE)](https://arxiv.org/pdf/1709.01507): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance.
 - [Convolutional Block Attention Module (CBAM)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance. Shown to have negligible computational/memory overhead but provides significant performance when used.
 
 ## ML architectural performance considerations
@@ -28,3 +29,4 @@ A list of common and useful computational techniques and models I have come acro
 - Utility functions: Statistical functions used by machine learning models to calculate how close predictions are to target values. Used in neural networks during gradient ascent to shift weights such that likelihood is maximized.
 - Overfitting: Refers to when models are trained to fit too well to training/observed data, such that they no longer generalize and perform well to testing/unobserved data. Can be identified by comparing how the loss curve looks between training and validation data.
 - Underfitting: Refers to when models are not sufficiently trained to perform well even on training/observed data, so they don't perform well to testing/unobserved data as well. Can be identified by a loss curve that continues to improve during model training.
+- Attention blocks: Lightweight modules you can add to the base model, used to weight channel/spatial features to identify important features for output task.
