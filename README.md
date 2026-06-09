@@ -7,7 +7,7 @@ A list of common and useful computational techniques/models I have come across w
 - Chromatic aberration correction: Methods for correcting chromatic abberations in images (e.g. color fringing, image blur), through calculating and applying offsets and scale factors. 
 - Morphological operations: Binary mask processing operations to improve the quality of generated masks for object detection in images.
 - Low-pass filters: Filters that remove high-frequency noises while allowing low-frequency signals to pass through, useful for providing smoothing and blurring effects in images.
-- High-pass filters: Filters that remove low-frequency noises while allowing high-frequency signals to pass through, useful for sharpening effects and detecting sharp edges in images.
+- High-pass filters: Filters that remove low-frequency noises while allowing high-frequency signals to pass through, useful for sharpening effects and detecting sharp edges in images. 
 - Otsu Thresholding: A simple method for generating a binary mask of objects in images, useful for object detections.
 - Image denoising: Technique to reduce graininess and decolorization in images to improve image quality.
 - Feature Extraction: Methods used to convert objects of interest in an image into vector representation, useful for object recognition and object matching tasks.
@@ -18,7 +18,7 @@ A list of common and useful computational techniques/models I have come across w
 - [Cellpose](https://github.com/MouseLand/cellpose): A U-Net model trained specifically for cell segmentation in images. Offers segmentation on specific cell features, such as cell boundaries or nucleus segmentation.
 - [BigFISH](https://github.com/fish-quant/big-fish) spot detection in microscopy images: Detects fluorescent spots in microscopy images by enhancing spots using a Laplacian of Gaussian (LoG) filter, followed by pixel intensity thresholding to detect RNA spots.
 - [trackpy](https://github.com/soft-matter/trackpy) spot detection in microscopy images: Detects fluorescent spots in microscopy images by leveraging on the Crocker-Grier algorithm (detect feature then track movement).
-- [Watershed](https://www.geeksforgeeks.org/computer-vision/image-segmentation-with-watershed-algorithm-opencv-python): An opencv algorithm that involves creating basins based on pixel intensities, and expanding them to segment objects in images.
+- [Watershed](https://www.geeksforgeeks.org/computer-vision/image-segmentation-with-watershed-algorithm-opencv-python): An opencv algorithm that involves creating basins based on pixel intensities, and expanding them to segment objects in images. Useful for segmenting objects that overlap or connect.
 - [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything): A vision-transformer (ViT) model from MetaAI that takes in user-specified prompts to segment objects in images. Offers both a GUI and an API for better customization of segmentation.
 - [CLIP](https://arxiv.org/pdf/2103.00020): A vision language model from OpenAI that connects images to texts and vice versa. Useful for zero-shot image classification or semantic embedding tasks. 
 
