@@ -1,5 +1,5 @@
 # Overview of computer vision glossary
-A list of common and useful computational techniques and models I have come across when working on image processing applications. Some of them are illustrated using visual examples in this repository.
+A list of common and useful computational techniques/models I have come across when working on computer vision applications. Some of them are illustrated using visual examples in this repository.
 
 ## Classical CV techniques
 - Vignetting: Techniques for creating darker edges in images, also known as vignetting.
