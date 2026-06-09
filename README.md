@@ -22,11 +22,13 @@ A list of common and useful computational techniques and models I have come acro
 - [Segment Anything Model (SAM)](https://github.com/facebookresearch/segment-anything): A vision-transformer (ViT) model from MetaAI that takes in user-specified prompts to segment objects in images. Offers both a GUI and an API for better customization of segmentation.
 - [CLIP](https://arxiv.org/pdf/2103.00020): A vision language model from OpenAI that connects images to texts and vice versa. Useful for zero-shot image classification or semantic embedding tasks. 
 
-## ML architectural performance add-ons
+## ML performance improvement techniques
+- Quantization: Methods used to reduce model precision (e.g. weights/activation outputs), used to reduce model memory or improve inference speed. Most useful for models required to run on edge devices that have memory or computational constraints.
+- Hyperparameter tuning techniques: Methods used to tune the hyperparameters of a model to optimize for performance. Depending on model complexity and how many hyperparameters need to be tuned, these techniques are usually time-consuming and costly to carry out.
 - [Squeeze-and-Excitation Networks (SE)](https://arxiv.org/pdf/1709.01507): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance.
 - [Convolutional Block Attention Module (CBAM)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance. Shown to have negligible computational/memory overhead but provides significant performance when used.
 
-## ML architectural performance considerations
+## ML architectural components
 - Gradient descent algorithms: Methods utilized by optimizers in neural network models to shift weights in a way that improve performance, where performance is quantified by a loss/utility function.
 - Loss functions: Statistical functions used by machine learning models to calculate error between predictions and target values. Used in neural networks during gradient descent to shift weights such that error is minimized.
 - Utility functions: Statistical functions used by machine learning models to calculate how close predictions are to target values. Used in neural networks during gradient ascent to shift weights such that likelihood is maximized.
