@@ -13,7 +13,7 @@ A list of common and useful computational techniques/models I have come across w
 - Feature Extraction: Methods used to convert objects of interest in an image into vector representation, useful for object recognition and object matching tasks.
 - Voxelization: Methods used to turn a set of 3D xyz coordinates into an organized grid of 3D voxel (volumetric pixels), useful as a preprocessing step for 3D construction tasks.
 
-## Open-source deep-learning models/libraries
+## Open-source deep-learning models
 - [Deepspot](https://github.com/cbib/DeepSpot): Deep-learning CNN model for enhancement of fluorescent spots in microscopy images.
 - [Cellpose](https://github.com/MouseLand/cellpose): A U-Net model trained specifically for cell segmentation in images. Offers segmentation on specific cell features, such as cell boundaries or nucleus segmentation.
 - [BigFISH](https://github.com/fish-quant/big-fish) spot detection in microscopy images: Detects fluorescent spots in microscopy images by enhancing spots using a Laplacian of Gaussian (LoG) filter, followed by pixel intensity thresholding to detect RNA spots.
@@ -27,6 +27,8 @@ A list of common and useful computational techniques/models I have come across w
 - Hyperparameter tuning techniques: Methods used to tune the hyperparameters of a model to optimize for performance. Depending on model complexity and how many hyperparameters need to be tuned, these techniques are usually time-consuming and costly to carry out.
 - [Squeeze-and-Excitation Networks (SE)](https://arxiv.org/pdf/1709.01507): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance.
 - [Convolutional Block Attention Module (CBAM)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance. Shown to have negligible computational/memory overhead but provides significant performance when used.
+- Sliced Aided Hyper Inference (SAHI): Converts an image into smaller equal-sized, overlapping tiles. Useful as a preprocessing tool for improving detection of very small objects on each tile.
+- Non-Max Supression (NMS): Removes redundant overlapping predictions (e.g. bounding boxes) based on confidence scores and IoU. Useful as a post-processing tool to select good quality predictions for object detection.
 
 ## ML architectural components
 - Gradient descent algorithms: Methods utilized by optimizers in neural network models to shift weights in a way that improve performance, where performance is quantified by a loss/utility function.
@@ -37,6 +39,20 @@ A list of common and useful computational techniques/models I have come across w
 - Activation functions: Functions applied to a neuron's output values to introduce non-linearity to models, since neurons inherently calculate output based on a linear function. We can best think of activation functions as transforming model output to a set range of values suitable for the prediction task at hand.
 - Pooling layers: Applies a function for simultaneous downsampling and feature extraction, also help models learn features that are spatially invariant (i.e. Translation Invariance).
 - Strides: Parameter that determines how much a convolutional filter is moved when extracting features in the input data. Typically used as an alternative to pooling layers for simulataneous downsampling and feature extraction, since they are computationally cheaper and does not rely on a fixed pooling function.
+
+## Evaluation metrics
+- Precision: The number of predicted true positives among all predicted positives (TP + FP). Evaluates prediction quality of classification model i.e. minimizing false positives.
+- Recall/Sensitivity/True Positive Rate: The number of predicted true positives among all actual positives (TP + FN). Evaluates prediction quantity of classification model i.e. minimizing false negatives.
+- F1 score: Combines precision and recall into one metric for balanced evaluation. Most commonly weights both equally, but can be modified to calculate weighted averages based on class sizes (micro).
+- Accuracy: The number of correct predictions (TP + TN) among total datapoints. Evaluates metric on prediction consistency of model performance.
+- False Positive Rate: The number of false positives among all actual negatives (FP + TN). Evaluates prediction quality of classification model i..e minimizing "false alarms".
+- Mean Squared Error (MSE): Average of all squared errors (actual - predicted), penalizes bigger errors/outliers in regression models.
+- Mean Absolute Error (MAE): Average of all absolute errors (actual - predicted), penalizes all errors including outliers equally in regression models.
+- Root Mean Squared Error (RMSE): Square root of calculated MSE. Converts MSE into the same units as data, makes the quantified error directly interpretable in regression models.
+- Mean Absolute Percentage Error (MAPE): Average of all absolute percentage error. Useful as a scale-independent metric to compare performance between different datasets or regression models.
+- R Squared: Variance of model residuals against total variance in data. Measures how much variance in data is captured by model predictions, useful for assessing if predictions are based on learned patterns for regression models.
+- Mean Average Precision (MAP): Mean of all calculated class-specific average precision, combines precision and recall into one metric that is measured at different thresholds. Coupled with IoU metric when evaluating for object detection predictions i.e. bounding boxes.
+- Intersection of Union (IoU): Area of overlap over total area for two boundaries. Useful to identify quality of object detection predictions i.e. bounding boxes.
 
 ## Other good-to-know metrics/theories
 - Signal-to-Noise ratio: The ratio of signal to noise, or information from the object of interest vs from non-object of interest. For images, it is defined as the mean pixel intensity / standard deviation of noise. Useful to measure variability for image quality purposes.
