@@ -27,7 +27,7 @@ A list of common and useful computational techniques/models I have come across w
 - Hyperparameter tuning techniques: Methods used to tune the hyperparameters of a model to optimize for performance. Depending on model complexity and how many hyperparameters need to be tuned, these techniques are usually time-consuming and costly to carry out.
 - [Squeeze-and-Excitation Networks (SE)](https://arxiv.org/pdf/1709.01507): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance.
 - [Convolutional Block Attention Module (CBAM)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf): Lightweight attention module that can be easily integrated to different types of model architecture to improve performance. Shown to have negligible computational/memory overhead but provides significant performance when used.
-- Sliced Aided Hyper Inference (SAHI): Converts an image into smaller equal-sized, overlapping tiles. Useful as a preprocessing tool for improving detection of very small objects on each tile.
+- Sliced Aided Hyper Inference (SAHI): Converts an image into smaller equal-sized, overlapping tiles and maps detected coordinates back to original image coordinates. Useful as a pre-processing tool before model inference for improving detection of very small objects on each tile.
 - Non-Max Supression (NMS): Removes redundant overlapping predictions (e.g. bounding boxes) based on confidence scores and IoU. Useful as a post-processing tool to select good quality predictions for object detection.
 
 ## ML architectural components
