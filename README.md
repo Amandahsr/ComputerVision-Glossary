@@ -42,7 +42,8 @@ A list of common and useful computational techniques/models I have come across w
 
 ## Evaluation metrics
 - Precision: The number of predicted true positives among all predicted positives (TP + FP). Evaluates prediction quality of classification model i.e. minimizing false positives.
-- Recall/Sensitivity/True Positive Rate: The number of predicted true positives among all actual positives (TP + FN). Evaluates prediction quantity of classification model i.e. minimizing false negatives.
+- Recall/Sensitivity/True Positive Rate: The number of predicted true positives among all actual positives (TP + FN). Evaluates prediction quality for positive class i.e. maximizing true positives.
+- Specificity/True Negative Rate: The number of true negatives among all actual negatives (TN + FP). Evaluates prediction quality for negative class i.e. maximizing true negatives.
 - F1 score: Combines precision and recall into one metric for balanced evaluation. Most commonly weights both equally, but can be modified to calculate weighted averages based on class sizes (micro).
 - Accuracy: The number of correct predictions (TP + TN) among total datapoints. Evaluates metric on prediction consistency of model performance.
 - False Positive Rate: The number of false positives among all actual negatives (FP + TN). Evaluates prediction quality of classification model i..e minimizing "false alarms".
